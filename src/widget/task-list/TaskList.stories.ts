@@ -18,8 +18,8 @@ export const Default: Story = {
   },
 };
 
-export const WithStateTasks: Story = {};
-WithStateTasks.args = {
+export const WithPinnedTasks: Story = {};
+WithPinnedTasks.args = {
   tasks: [
     ...mockTasks,
     {
@@ -28,6 +28,12 @@ WithStateTasks.args = {
       title: "Do Testing Library",
       state: TaskStateEnum.TASK_PINNED,
     },
+  ],
+};
+export const WithArchivedTasks: Story = {};
+WithArchivedTasks.args = {
+  tasks: [
+    ...mockTasks,
     {
       userId: 1,
       id: 6,
