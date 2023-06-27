@@ -1,12 +1,12 @@
 # Workflow name
-name: "Chromatic Deployment"
+name: "Chromatic"
 
 # Event for the workflow
 on: push
 
 # List of jobs
 jobs:
-  test:
+  chromatic-deployment:
     # Operating System
     runs-on: ubuntu-latest
     # Job steps
@@ -22,4 +22,3 @@ jobs:
         with:
           # 👇 Chromatic projectToken, refer to the manage page to obtain it.
           projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
-          
