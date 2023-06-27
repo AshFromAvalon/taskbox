@@ -68,5 +68,7 @@
   },
   "msw": {
     "workerDirectory": "public"
-  }
+  },
+  "readme": "ERROR: No README data found!",
+  "_id": "storybbok-react-ts@0.1.0"
 }

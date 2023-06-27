@@ -14,7 +14,6 @@ const preview: Preview = {
       },
     },
   },
-  // loaders: [mswLoader],
 };
 export const decorators = [withStore, mswDecorator];
 export default preview;
