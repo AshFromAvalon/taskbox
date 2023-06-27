@@ -1,0 +1,46 @@
+.list-item {
+  padding: 8px 8px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 40px;
+  width: 100%;
+}
+
+.list-item:not(:last-child) {
+  border-bottom: 1px solid grey;
+}
+
+.list-item.TASK_ARCHIVED input[type="text"] {
+  /* Generates an Accessibility contrast violation */
+  /* color: #a0aec0; */
+  color: #4a5568;
+  text-decoration: line-through;
+}
+
+.checkbox {
+  margin-right: 8px;
+}
+
+.title input[type="text"] {
+  border: none;
+  margin-bottom: 4px;
+}
+
+.custom-checkbox {
+  background: red;
+  height: 20px;
+  width: 20px;
+}
+
+.pin-button {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid gray;
+}
+
+.pin-button.TASK_PINNED {
+  background: lightblue;
+}

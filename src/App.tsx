@@ -1,24 +1,17 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect, useState } from "react";
+import logo from "./logo.svg";
+import "./App.css";
+import { TaskStateEnum, TaskType } from "./entities/task";
+import { TaskList } from "./widget/task-list";
+import { RootState, useAppDispatch } from "./app/appStore";
+import { useSelector } from "react-redux";
+import { fetchTasks, selectTasks } from "./entities/task/model/slice";
+import { MainPage } from "./pages/main";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <MainPage />
     </div>
   );
 }
