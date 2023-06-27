@@ -58,6 +58,7 @@
     "@storybook/react-webpack5": "^7.0.23",
     "@storybook/testing-library": "^0.0.14-next.2",
     "babel-plugin-named-exports-order": "^0.0.2",
+    "chromatic": "^6.19.9",
     "eslint-plugin-storybook": "^0.6.12",
     "msw": "^1.2.2",
     "msw-storybook-addon": "^1.8.0",
